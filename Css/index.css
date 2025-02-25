@@ -1,0 +1,42 @@
+@media (max-width: 768px) {
+  .featured-books {
+    flex-direction: column;
+  }
+}
+body{
+  padding: 0%;
+  margin: 0%;
+}
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0%;
+  margin: 0%;
+  width: 100%;
+  height: 20vh;
+  background-color:#13225f ;
+}
+.nav-icons {
+  margin-right:5%;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+.nav-icons i {
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+.config{
+  margin-left: 5%;
+  position: relative;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+.config i{
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
