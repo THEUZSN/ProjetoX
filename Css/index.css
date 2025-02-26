@@ -6,6 +6,7 @@
 body{
   padding: 0%;
   margin: 0%;
+  background-color: #213fbb;
 }
 header{
   display: flex;
@@ -39,4 +40,8 @@ header{
   color: white;
   font-size: 24px;
   cursor: pointer;
+}
+img{
+  height: 30vw;
+  max-width: 100%;
 }
