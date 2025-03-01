@@ -1,13 +1,10 @@
-@media (max-width: 768px) {
-  .featured-books {
-    flex-direction: column;
-  }
-}
+
 body{
   padding: 0%;
   margin: 0%;
-  background-color: #213fbb;
+  background-image: url("../../ProjetoX-main/img/back.jpeg")no-repeat center center fixed;
 }
+
 header{
   display: flex;
   justify-content: space-between;
@@ -15,7 +12,7 @@ header{
   padding: 0%;
   margin: 0%;
   width: 100%;
-  height: 20vh;
+  height: 10vh;
   background-color:#13225f ;
 }
 .nav-icons {
@@ -41,7 +38,37 @@ header{
   font-size: 24px;
   cursor: pointer;
 }
-img{
-  height: 30vw;
-  max-width: 100%;
+.carousel {
+  overflow: hidden;
+  width: 20%;
+  background-color: #ffffff00;
+  padding: 28px 0;
+  margin-top: 60px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 7px;
+}
+
+.image-container {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 250px;
+  justify-items: stretch;
+  animation: animation 14s linear infinite;
+ 
+}
+
+.image-container img {
+  width: 150px;
+  height: 270px;
+  border-radius: 12px;
+  object-fit: cover;
+  border: 1px solid #000000;
+}
+
+@keyframes animation {
+  to {
+    translate: calc(-4 * 250px);
+  }
 }
