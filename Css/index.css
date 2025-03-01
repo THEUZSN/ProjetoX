@@ -1,10 +1,14 @@
-
+@media (max-width: 768px) {
+  .featured-books {
+    flex-direction: column;
+  }
+}
 body{
+  justify-content: center;
   padding: 0%;
   margin: 0%;
-  background-image: url("../../ProjetoX-main/img/back.jpeg")no-repeat center center fixed;
+  background-color: #213fbb;
 }
-
 header{
   display: flex;
   justify-content: space-between;
@@ -12,7 +16,7 @@ header{
   padding: 0%;
   margin: 0%;
   width: 100%;
-  height: 10vh;
+  height: 20vh;
   background-color:#13225f ;
 }
 .nav-icons {
@@ -39,36 +43,32 @@ header{
   cursor: pointer;
 }
 .carousel {
-  overflow: hidden;
-  width: 20%;
-  background-color: #ffffff00;
-  padding: 28px 0;
-  margin-top: 60px;
-  position: absolute;
-  top: 0;
-  right: 0;
-  margin-right: 7px;
+    overflow: hidden;
+    width: 100%;
+    background-color: #1e272e;
+    padding: 30px 0;
+    margin-top: 60px;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    position: relative;
 }
 
 .image-container {
-  display: grid;
-  grid-auto-flow: column;
-  grid-auto-columns: 250px;
-  justify-items: stretch;
-  animation: animation 14s linear infinite;
- 
+    display: flex;
+    width: fit-content;
+    animation: slide 12s linear infinite;
 }
 
 .image-container img {
-  width: 150px;
-  height: 270px;
-  border-radius: 12px;
-  object-fit: cover;
-  border: 1px solid #000000;
+  margin: 10px;
+    width: 600px;
+    height: 270px;
+    border-radius: 12px;
+    object-fit: cover;
+    border: 1px solid #a5b1c2;
 }
 
-@keyframes animation {
-  to {
-    translate: calc(-4 * 250px);
-  }
+@keyframes slide {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); } 
 }
