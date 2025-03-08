@@ -16,7 +16,11 @@ header{
   padding: 0%;
   margin: 0%;
   width: 100%;
+<<<<<<< HEAD
   height: 10vh;
+=======
+  height: 20vh;
+>>>>>>> b696dedb45c862540e856b13c17d1e28c5afd39b
   background-color:#13225f ;
 }
 .nav-icons {
@@ -45,7 +49,11 @@ header{
 .carousel {
     overflow: hidden;
     width: 100%;
+<<<<<<< HEAD
     background-color: f;
+=======
+    background-color: #1e272e;
+>>>>>>> b696dedb45c862540e856b13c17d1e28c5afd39b
     padding: 30px 0;
     margin-top: 60px;
     border-radius: 5px;
@@ -68,6 +76,7 @@ header{
     border: 1px solid #a5b1c2;
 }
 
+<<<<<<< HEAD
 .books{
   display: flex;
   overflow: hidden;
@@ -95,6 +104,8 @@ header{
 
 }
 
+=======
+>>>>>>> b696dedb45c862540e856b13c17d1e28c5afd39b
 @keyframes slide {
     0% { transform: translateX(0); }
     100% { transform: translateX(-50%); } 
