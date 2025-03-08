@@ -1,4 +1,4 @@
-# Rede Social de Livros (Em Desenvolvimento)
+# Rede Social de Livros
 
 A Rede Social de Livros é uma plataforma dedicada a conectar pessoas com interesses literários semelhantes. O objetivo é criar um ambiente interativo onde os usuários possam participar de fóruns sobre livros, gêneros ou franquias específicas, compartilhar recomendações e descobrir novas comunidades literárias.
 
