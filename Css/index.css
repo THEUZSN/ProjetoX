@@ -3,13 +3,15 @@
     flex-direction: column;
   }
 }
-body{
+
+body {
   justify-content: center;
   padding: 0%;
   margin: 0%;
   background-color: #213fbb;
 }
-header{
+
+header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -17,73 +19,79 @@ header{
   margin: 0%;
   width: 100%;
   height: 10vh;
-  background-color: #13225f ;
+  background-color: #13225f;
 }
+
 .nav-icons {
-  margin-right:5%;
+  margin-right: 2%;
   display: flex;
   gap: 15px;
   align-items: center;
 }
+
 .nav-icons i {
   color: white;
   font-size: 24px;
   cursor: pointer;
 }
-.config{
-  margin-left: 5%;
+
+.config {
+  margin-left: 2%;
   position: relative;
   display: flex;
   gap: 15px;
   align-items: center;
 }
-.config i{
+
+.config i {
   color: white;
   font-size: 24px;
   cursor: pointer;
 }
+
 .carousel {
-    overflow: hidden;
-    width: 100%;
-    background-color:#1d369b;
-    padding: 30px 0;
-    margin-top: 60px;
-    border-radius: 5px;
-    box-shadow: 0 0 15px rgba(12, 26, 85, 0.5);
-    position: relative;
+  overflow: hidden;
+  width: 100%;
+  background-color: #1d369b;
+  padding: 30px 0;
+  margin-top: 60px;
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(12, 26, 85, 0.5);
+  position: relative;
 }
 
 .image-container {
-    display: flex;
-    width: fit-content;
-    animation: slide 12s linear infinite;
+  display: flex;
+  width: fit-content;
+  animation: slide 12s linear infinite;
 }
 
 .image-container img {
   margin: 10px;
-    width: 600px;
-    height: 270px;
-    border-radius: 12px;
-    object-fit: cover;
-    border: 1px solid #a5b1c2;
+  width: 600px;
+  height: 270px;
+  border-radius: 12px;
+  object-fit: cover;
+  border: 1px solid #a5b1c2;
 }
 
-.books{
+.books {
+  flex-direction: column;
   background-color: #1d369b;
   display: flex;
-  overflow: hidden;
+  overflow-x: auto; /* Permite o scroll horizontal */
   width: 100%;
   position: relative;
   padding: 20px 0;
   margin-top: 10px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5)
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
 }
 
-.books-container{
-  margin: auto;
-  display: flex;
-  width: fit-content;
-  
+.books-container {
+  display: flex; /* Garante que os livros fiquem na mesma linha */
+  gap: 10px; /* Espaçamento entre os livros */
+  overflow-x: auto; /* Faz com que os livros possam ser movidos horizontalmente */
+  padding-bottom: 10px; /* Adiciona um espaço de padding para evitar que os livros toquem a borda */
 }
 
 .books-container img {
@@ -101,8 +109,44 @@ header{
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
+/* Estilo do scrollbar */
+.books-container::-webkit-scrollbar {
+  height: 8px; 
+}
+
+/* Cor do track (fundo do scrollbar) */
+.books-container::-webkit-scrollbar-track {
+  background: #13225f; /* Cor do fundo */
+  border-radius: 10px;
+}
+
+/* Cor da "thumb" (a parte que o usuário arrasta) */
+.books-container::-webkit-scrollbar-thumb {
+  background: #a5b1c2; /* Cor da parte que se move */
+  border-radius: 10px;
+  border: 2px solid #13225f; /* Borda em torno do thumb */
+}
+
+/* Quando o thumb é hover (quando passa o mouse por cima) */
+.books-container::-webkit-scrollbar-thumb:hover {
+  background: #1d369b; /* Cor ao passar o mouse */
+}
+
+
+.title-fiction {
+  margin-left: 0;
+  font-size: 20px;
+  color: white;
+  background-color: #13225f;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
 
 @keyframes slide {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-50%); } 
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
