@@ -21,7 +21,7 @@ O objetivo deste projeto é proporcionar uma experiência onde leitores possam i
   - **PHP**: Gerenciamento da lógica de servidor, autenticação de usuários e interação com o banco de dados.
 
 - **Banco de Dados:**
-  - **MySQL ou SQLite** (dependendo da escala do projeto) para armazenar dados de usuários, livros, postagens e discussões.
+  - **MySQL** para armazenar dados de usuários, livros, postagens e discussões.
 
 ---
 
