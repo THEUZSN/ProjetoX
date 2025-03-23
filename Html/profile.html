@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+    <link rel="stylesheet" href="../Css/profile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+<body>
+
+    <header>
+        <div class="config">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        
+      <div class="nav-icons">
+        <a href="../index.html"><i class="fas fa-home"></i></a>
+        <i class="fas fa-comments"></i>
+        <i class="fas fa-bell"></i>
+        <a href=""><i class="fas fa-user-circle"></i></a>
+      </div>
+    </header>
+        <div class="profile-container">
+            
+            <!-- Foto de perfil -->
+            <div class="profile-pic">
+                <h2 id="profile-name">Nome do Usuário</h2>
+                <img id="profile-image" src="https://via.placeholder.com/150" alt="Foto de perfil">
+                <input type="file" id="upload-pic" accept="image/*" style="display: none;">
+                <button id="change-pic" class="edit-mode"><i class="fa-solid fa-pen-to-square"></i></button>
+              
+            </div>
+    
+            <!-- Bio -->
+            <div class="bio">
+                
+                <p id="profile-bio">Esta é uma breve bio do usuário.</p>
+                <input type="text" id="edit-name" class="edit-mode" placeholder="Nome">
+                <textarea id="edit-bio" class="edit-mode" placeholder="Bio" rows="4"></textarea>
+                <button id="edit-profile">Editar Perfil</button>
+                <button id="save-profile" class="edit-mode">Salvar</button>
+            </div>
+    
+            <!-- Livros favoritos -->
+            <div class="favorites">
+                <h3>Livros Favoritos</h3>
+                <ul id="favorite-books"></ul>
+                <div class="input-group edit-mode">
+                    <input type="text" id="book-input" placeholder="Adicionar livro favorito">
+                    <button onclick="addBook()">Adicionar</button>
+                </div>
+            </div>
+    
+            <!-- Fóruns que participa -->
+            <div class="forums">
+                <h3>Fóruns Participantes</h3>
+                <ul id="forum-list"></ul>
+                <div class="input-group edit-mode">
+                    <input type="text" id="forum-input" placeholder="Adicionar fórum">
+                    <button onclick="addForum()">Adicionar</button>
+                </div>
+            </div>
+        </div>
+        <script src="../Javascript/profile.js"></script>
+</body>
+</html>
