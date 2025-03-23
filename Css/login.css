@@ -1,6 +1,5 @@
 body {
-    background-image: url('img/back.jpeg'); 
-    background-image: url('../../ProjetoX-main/img/back.jpeg'); 
+    background-image: url('../Img/back.jpeg'); 
     background-size: cover;
     font-family: sans-serif;
     display: flex;
