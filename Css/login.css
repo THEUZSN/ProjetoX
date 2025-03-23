@@ -1,5 +1,5 @@
 body {
-    background-image: url('../Img/back.jpeg'); 
+    background-color: #1A1A2E;
     background-size: cover;
     font-family: sans-serif;
     display: flex;
@@ -7,18 +7,25 @@ body {
     align-items: center;
     min-height: 100vh;
     margin: 0;
+    color: white;
   }
   
   .container {
-    background-color: rgba(71, 71, 71, 0.116); /* Fundo translúcido */
+    background-color: #16213E; 
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
   }
   
-  .login-form {
+  .login-form  {
     text-align: center;
   }
+    & a {
+      color: #0431c4;
+      text-decoration: none;
+    }
+    
+  
   
   .login-form input[type="text"],
   .login-form input[type="password"] {
@@ -30,10 +37,11 @@ body {
   }
   
   .login-form input[type="submit"] {
-    background-color: #4CAF50;
+    background-color: #0431c4;
     color: white;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
   }
+  
