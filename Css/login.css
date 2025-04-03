@@ -1,5 +1,5 @@
 body {
-    background-image: url('../Img/back.jpeg'); 
+    background-color: rgb(7, 7, 98);
     background-size: cover;
     font-family: sans-serif;
     display: flex;
@@ -10,7 +10,7 @@ body {
   }
   
   .container {
-    background-color: rgba(71, 71, 71, 0.116); /* Fundo translúcido */
+    background-color: rgb(63, 56, 92); /* Fundo translúcido */
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
